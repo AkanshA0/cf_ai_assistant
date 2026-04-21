@@ -1,6 +1,7 @@
 # cf_ai_chat_assistant
 
 An AI-powered chat assistant built on Cloudflare's developer platform. It uses Llama 3.3 for inference, Durable Objects for per-session memory, and a streaming chat UI served as a static asset.
+Deployed link: https://cf-ai-chat-assistant.akansha-bansiya.workers.dev/
 
 ## Architecture
 
