@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Wrangler local state and cache
+.wrangler/
+
+# Local secrets — never commit these
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*

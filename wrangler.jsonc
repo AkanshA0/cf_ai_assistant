@@ -1,0 +1,31 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cf-ai-chat-assistant",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-21",
+	"migrations": [
+		{
+			"new_sqlite_classes": ["ChatSession"],
+			"tag": "v1"
+		}
+	],
+	"assets": {
+		"directory": "./public"
+	},
+	"durable_objects": {
+		"bindings": [
+			{
+				"class_name": "ChatSession",
+				"name": "CHAT_SESSION"
+			}
+		]
+	},
+	"ai": {
+		"binding": "AI"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"compatibility_flags": ["nodejs_compat"]
+}
